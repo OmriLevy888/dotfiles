@@ -1,0 +1,7 @@
+Looking for git in: git
+Using git 2.28.0 from git
+> git rev-parse --git-dir
+Open repository: /home/user/repos/regel-lang
+> git status -z -u
+> git symbolic-ref --short HEAD
+Open repository: /home/user/repos/regel-lang

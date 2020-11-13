@@ -1,0 +1,4 @@
+[2020-11-13 17:24:27.614] [sharedprocess] [info] main {"machineId":"6435390c91b6a38f979f6b19da9ea642d9e162f9b45bda444c00d0ab275b51ea","windowId":2}
+[2020-11-13 17:24:27.915] [sharedprocess] [info] Deleted from disk s-nlf-fh.glassit /home/user/.vscode-oss/extensions/s-nlf-fh.glassit-0.2.2
+[2020-11-13 17:24:28.194] [sharedprocess] [info] Deleted from disk ms-vscode.cpptools /home/user/.vscode-oss/extensions/ms-vscode.cpptools-1.1.0
+[2020-11-13 17:25:07.629] [sharedprocess] [info] Starting to clean up unused language packs.

@@ -1,0 +1,9 @@
+[2020-11-13 17:15:34.116] [sharedprocess] [info] main {"machineId":"6435390c91b6a38f979f6b19da9ea642d9e162f9b45bda444c00d0ab275b51ea","windowId":2}
+[2020-11-13 17:16:14.134] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-11-13 17:23:56.254] [sharedprocess] [info] Uninstalling extension: s-nlf-fh.glassit
+[2020-11-13 17:23:56.264] [sharedprocess] [info] Successfully uninstalled extension: s-nlf-fh.glassit
+[2020-11-13 17:24:08.444] [sharedprocess] [info] Installing the extension: ms-vscode.cpptools
+[2020-11-13 17:24:10.566] [sharedprocess] [info] Extracted extension to /home/user/.vscode-oss/extensions/.ms-vscode.cpptools-1.1.1: ms-vscode.cpptools
+[2020-11-13 17:24:10.566] [sharedprocess] [info] Renamed to /home/user/.vscode-oss/extensions/ms-vscode.cpptools-1.1.1
+[2020-11-13 17:24:10.568] [sharedprocess] [info] Installation completed. ms-vscode.cpptools
+[2020-11-13 17:24:10.570] [sharedprocess] [info] Successfully installed the extension: ms-vscode.cpptools

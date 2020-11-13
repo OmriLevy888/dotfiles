@@ -1,0 +1,180 @@
+Looking for git in: git
+Using git 2.28.0 from git
+> git rev-parse --git-dir
+Open repository: /home/user/repos/regel-lang
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :lexer/Lexer.h
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/Lexer.h
+> git cat-file -s 604b280453d70c31d06e50a9060f2c103cdccad6
+> git check-ignore -v -z --stdin
+> git show --textconv :lexer/Token.h
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/Token.h
+> git check-ignore -v -z --stdin
+> git cat-file -s f37d936f829e72212f01415356ac2bf92994e694
+> git show --textconv :lexer/DummyTokenGenerator.h
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/DummyTokenGenerator.h
+> git cat-file -s 0605d9cdc183052d5e341c08b34fd1ba30bb5307
+> git check-ignore -v -z --stdin
+> git show --textconv :lexer/TokenCollection.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/TokenCollection.cpp
+> git cat-file -s 95f1aa9ef6baaffd801e10d52766cbad884f24aa
+> git check-ignore -v -z --stdin
+> git show --textconv :lexer/TokenCollection.h
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/TokenCollection.h
+> git cat-file -s c235f1930989369bc7b918b0a74abc8cfd53e6d1
+> git check-ignore -v -z --stdin
+> git show --textconv :lang-spec/sample.rgl
+> git ls-files --stage -- /home/user/repos/regel-lang/lang-spec/sample.rgl
+> git cat-file -s 7c9b914f016822aae01ccdd5d0200d70426dc3df
+> git check-ignore -v -z --stdin
+> git show --textconv :lang-spec/syntax.bnf
+> git ls-files --stage -- /home/user/repos/regel-lang/lang-spec/syntax.bnf
+> git cat-file -s 7f31175178dde0345c6360eb3531ff5620c28910
+> git check-ignore -v -z --stdin
+> git show --textconv :lexer/Lexer.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/Lexer.cpp
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :lexer/Lexer.h
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/Lexer.h
+> git cat-file -s 604b280453d70c31d06e50a9060f2c103cdccad6
+> git show --textconv :rglc.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/rglc.cpp
+> git cat-file -s b989fd989747f669eb1c3a257c714575009fcdd7
+> git check-ignore -v -z --stdin
+> git show --textconv :lexer/Lexer.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/Lexer.cpp
+> git show --textconv :tests/common/FormatterTests.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/tests/common/FormatterTests.cpp
+> git cat-file -s 2a0baeec358e1d6a7f16a5932eeab08b87900df7
+> git check-ignore -v -z --stdin
+> git show --textconv :lexer/Lexer.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/Lexer.cpp
+> git show --textconv :lexer/TokenCollection.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/TokenCollection.cpp
+> git cat-file -s 95f1aa9ef6baaffd801e10d52766cbad884f24aa
+> git show --textconv :lexer/Lexer.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/Lexer.cpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :lexer/TokenCollection.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/TokenCollection.cpp
+> git cat-file -s 95f1aa9ef6baaffd801e10d52766cbad884f24aa
+> git show --textconv :lexer/Lexer.cpp
+> git ls-files --stage -- /home/user/repos/regel-lang/lexer/Lexer.cpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse lexer/logic-implementation
+> git rev-parse --symbolic-full-name lexer/logic-implementation@{u}
+fatal: no upstream configured for branch 'lexer/logic-implementation'
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

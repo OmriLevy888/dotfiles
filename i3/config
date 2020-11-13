@@ -1,0 +1,267 @@
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
+# This config file uses keycodes (bindsym) and was written for the QWERTY
+# layout.
+#
+# To get a config file with the same key positions, but for your current
+# layout, use the i3-config-wizard
+#
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:System San Francisco Display 10
+
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+#font pango:DejaVu Sans Mono 8
+
+# Before i3 v4.8, we used to recommend this one as the default:
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# The font above is very space-efficient, that is, it looks good, sharp and
+# clear in small sizes. However, its unicode glyph coverage is limited, the old
+# X core fonts rendering does not support right-to-left and this being a bitmap
+# font, it doesn’t scale on retina/hidpi displays.
+
+# --- CONTROLS ---
+#
+# Action              | Keybinding
+# ------------------------------------------------------
+# modifier            | super key
+# up                  | k
+# down                | j
+# left                | h
+# right               | l
+# open terminal       | mod + enter
+# open file explorer  | mod + shift + enter
+# open rofi           | mod + d
+# close window        | mod + x
+# focus + direction   | mod + ctrl + direction
+# move + direction    | mod + shift + direction
+# resize + direction  | mod + alt + direction
+# toggle fullscreen   | mod + f
+# change workspace    | mod + <workspace number>
+# next/prev workspace | mod + (tab/shift+tab)
+# move to workspace   | mod + shift + <workspace number>
+
+# use these keys for focus, movement, and resize directions when reaching for
+# the arrows is not convenient
+set $up k
+set $down j
+set $left h
+set $right l
+
+# use super key as the modifier
+set $mod Mod4
+# use alt key as the modifier
+#set $mod Mod1
+
+set $bg-color 	         #2f343f
+set $inactive-bg-color   #2f343f
+set $text-color          #f3f4f5
+set $inactive-text-color #676E7D
+set $urgent-bg-color     #E53935
+
+# use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Shift+Return exec --no-startup-id thunar
+
+# kill focused window
+bindsym $mod+x kill
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 30 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 11"
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# change focus
+bindsym $mod+Ctrl+$left focus left
+bindsym $mod+Ctrl+$down focus down
+bindsym $mod+Ctrl+$up focus up
+bindsym $mod+Ctrl+$right focus right
+
+# move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# split in horizontal orientation
+bindsym $mod+semicolon split h
+
+# split in vertical orientation
+bindsym $mod+apostrophe split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+#bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+#bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+plus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+plus scratchpad show
+
+#set $workspace1 "1 "
+#set $workspace2 "2 "
+#set $workspace3 "3 "
+
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+bindsym $mod+Mod1+$left		resize shrink width 5 px or 5 ppt
+bindsym $mod+Mod1+$down		resize grow height 5 px or 5 ppt
+bindsym $mod+Mod1+$up		resize shrink height 5 px or 5 ppt
+bindsym $mod+Mod1+$right	resize grow width 5 px or 5 ppt
+
+# window colors:
+#                       border              background         text                 indicator
+client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+
+hide_edge_borders both
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3blocks -c ~/.config/i3blocks/config
+        colors {
+		background $bg-color
+	    	separator #757575
+		#                  border             background         text
+		focused_workspace  $bg-color          $bg-color          $text-color
+		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+	}
+}
+
+# Mode to handle system operations
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $HOME/.config/i3/scripts/i3exit lock, mode "default"
+    bindsym e exec --no-startup-id $HOME/.config/i3/scripts/i3exit logout, mode "default"
+    bindsym s exec --no-startup-id $HOME/.config/i3/scripts/i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id $HOME/.config/i3/scripts/i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id $HOME/.config/i3/scripts/i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id $HOME/.config/i3/scripts/i3exit shutdown, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Escape mode "$mode_system"
+
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
+
+#exec cvt -r 1920 1080
+exec bash -c "xrandr --newmode 1920x1080R 138.50 1920 1968 2000 2080 1080 1083 1088 1111 +hsync -vsync"
+exec bash -c "xrandr --addmode Virtual1 1920x1080R"
+exec bash -c "xrandr -s 1920x1080R"
+
+## Network manager in corner
+exec --no-startup-id nm-applet
+
+# Wallpaper
+exec_always --no-startup-id feh --bg-fill ~/.wallpaper
+#exec_always --no-startup-id feh --bg-fill ~/.wallpaper.left --bg-fill ~/.wallpaper.right
+
+# Transparency
+exec --no-startup-id compton -f
+
+# Volume Controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 10%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 10%-
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master 1+ toggle
+
+
+# Brightness Controls
+bindsym XF86MonBrightnessUp exec --no-startup-id $HOME/.config/i3/scripts/backlight -inc 30
+bindsym XF86MonBrightnessDown exec --no-startup-id $HOME/.config/i3/scripts/backlight -dec 30
+
+# Music controls
+bindsym $mod+p exec --no-startup-id playerctl play-pause
+bindsym $mod+bracketright exec --no-startup-id playerctl next
+bindsym $mod+bracketleft exec --no-startup-id playerctl previous
+
+# Monitors
+bindsym XF86Display exec --no-startup-id $HOME/.config/i3/scripts/mon-switch
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #444444 #222222 #ffffff #2e9ef4   #444444
+client.focused_inactive #333333 #444444 #ffffff #484e50   #444444
+client.unfocused        #333333 #555555 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
+for_window [class=".*"] border pixel 0
+gaps inner 16
+gaps outer 8
+
+# Startup applications
+#assign [class="firefox"] $workspace1
+#assign [class="kitty"] $workspace2
+#assign [class="code-oss"] $workspace3
+
+#exec --no-startup-id firefox
+#exec --no-startup-id kitty
+#exec --no-startup-id code
