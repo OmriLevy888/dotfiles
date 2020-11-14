@@ -58,10 +58,11 @@ set $mod Mod4
 #set $mod Mod1
 
 set $bg-color 	         #2f343f
+set $bg-color		 #1b2030
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
+set $urgent-bg-color     #ab6816
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -212,16 +213,18 @@ bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 #exec cvt -r 1920 1080
-exec bash -c "xrandr --newmode 1920x1080R 138.50 1920 1968 2000 2080 1080 1083 1088 1111 +hsync -vsync"
-exec bash -c "xrandr --addmode Virtual1 1920x1080R"
-exec bash -c "xrandr -s 1920x1080R"
+#exec bash -c "xrandr --newmode 1920x1080R 138.50 1920 1968 2000 2080 1080 1083 1088 1111 +hsync -vsync"
+#exec bash -c "xrandr --addmode Virtual1 1920x1080R"
+#exec bash -c "xrandr -s 1920x1080R"
+exec bash -c "xrandr --output Virtual1 --primary --mode 1920x1080 --pos 1080x465 --rotate normal --output Virtual2 --mode 1080x1920 --pos 0x0 --rotate normal --output Virtual3 --off --output Virtual4 --off --output Virtual5 --off --output Virtual6 --off --output Virtual7 --off --output Virtual8 --off"
 
 ## Network manager in corner
 exec --no-startup-id nm-applet
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/.wallpaper
+exec_always --no-startup-id sleep 1s && feh --bg-scale ~/.wallpaper.right --bg-scale ~/.wallpaper.left
 #exec_always --no-startup-id feh --bg-fill ~/.wallpaper.left --bg-fill ~/.wallpaper.right
+#exec_always --no-startup-id nitrogen --set-scaled ~/.wallpaper
 
 # Transparency
 exec --no-startup-id compton -f
@@ -230,7 +233,6 @@ exec --no-startup-id compton -f
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 10%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 10%-
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master 1+ toggle
-
 
 # Brightness Controls
 bindsym XF86MonBrightnessUp exec --no-startup-id $HOME/.config/i3/scripts/backlight -inc 30
@@ -255,7 +257,6 @@ client.background       #ffffff
 
 for_window [class=".*"] border pixel 0
 gaps inner 16
-gaps outer 8
 
 # Startup applications
 #assign [class="firefox"] $workspace1

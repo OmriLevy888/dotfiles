@@ -3,5 +3,8 @@
     "terminal.integrated.rendererType": "dom",
     "workbench.colorTheme": "Monokai",
     "glassit.alpha": 235,
-    "C_Cpp.updateChannel": "Insiders"
+    "C_Cpp.updateChannel": "Insiders",
+    "cSpell.userWords": [
+        "repr"
+    ]
 }
